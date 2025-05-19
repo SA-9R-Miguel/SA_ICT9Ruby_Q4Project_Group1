@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="obmc logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <title>Q4 Project</title>
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #CAF0F8;
+      margin-top: 80px;
+      color: #4e342e;
+    }
+
+    .navbar {
+      background: linear-gradient(to right, #ADE8F4, #00B4D8);
+      border-radius: 0 0 25px 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      img
+    }
+
+    .navbar-brand img {
+      border-radius: 50%;
+      border: 2px solid #0096C7;
+    }
+
+    .navbar-nav .nav-link {
+      color: #5d4037;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background-color: #6f85f4;
+      color: #4e342e;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control,
+    .form-select {
+      border-radius: 12px;
+      border: 1px solid #90E0EF;
+    }
+
+    button.btn {
+      background-color: #0077B6;
+      color: #4e342e;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    button.btn:hover {
+      background-color: #6f85f4;
+      transform: scale(1.05);
+    }
+
+    .section-title {
+      font-size: 28px;
+      background: linear-gradient(to right, #023E8A, #00B4D8);
+      color: #4e342e;
+      padding: 12px;
+      border-radius: 15px;
+      margin-top: 20px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .quarter-box {
+      background-color: #778da9;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(244, 180, 0, 0.1);
+      margin-bottom: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .quarter-box:hover {
+      transform: scale(1.01);
+    }
+
+    #profile {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(141, 110, 99, 0.2);
+    }
+
+    table {
+      background-color: #fffef7;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      font-family: 'Quicksand', sans-serif;
+      padding: 10px;
+      border: 1px solid #778da9;
+    }
+
+    th {
+      background-color: #778da9;
+    }
+
+    .footer {
+      background: linear-gradient(to left, #0077B6, #00B4D8);
+      color: #4e342e;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .fa {
+      margin: 0 8px;
+      color: #6d4c41;
+      transition: transform 0.3s;
+    }
+
+    .fa:hover {
+      transform: rotate(15deg);
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .fade-in:nth-child(1) { animation-delay: 0s; }
+    .fade-in:nth-child(2) { animation-delay: 1s; }
+    .fade-in:nth-child(3) { animation-delay: 2s; }
+    .fade-in:nth-child(4) { animation-delay: 3s; }
+    .fade-in:nth-child(5) { animation-delay: 4s; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid">
+      <a class="obmc logo.png" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about"> About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects"> Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#next"> What's Next</a></li>
+          <li class="nav-item"><a class="nav-link" href="#feedback"> Rate Us</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder=" Search">
+          <button class="btn" type="button">Go!</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 left-column">
+        <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t1.15752-9/491217942_1000218912282421_4925904066697518004_n.jpg?stp=dst-jpg_p2048x2048_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=gUvGoCXFQzUQ7kNvwH3_ra9&_nc_oc=AdlWG75nKWBpFatqtjtcYnS-a1nfrCZ08V10ikmCbTJG1Iq0AGP-ciVHzEqRUFYe9Qk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&oh=03_Q7cD2QGX-eJubfc9RUjYoAw3xQwTahVzpkBUtLTlTy2qAfqMkA&oe=68528AB7" style="width: 100%; border-radius: 10px">
+        <table class="table table-bordered mt-4">
+          <thead>
+            <tr><th colspan="2" style="text-align: center; background-color: #d4d8d9;">Profile Information</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><b>Name:</b></td><td>Daniella Kirsten V.  Catam</td></tr>
+            <tr><td><b>Interests/Clubs:</b></td><td>Dancing, Romcoms, My phone, Enhypen, Socmed</td></tr>
+            <tr><td><b>Ambition:</b></td><td><i>"To prove everyone that I'm not worthless."</i></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-8 right-column">
+        <div class="section-title">Quarter Projects</div>
+
+        <div class="quarter-box">
+          <h4>Quarter 1</h4>
+          <p>My first quarter project was about making a online shop platform. My products were Sonny Angels and Simiskis</p>
+          <img src='https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEUGPRSoOpTBgAlshqxah3%2FbZuY7oFesx%2FoONHJQGM%2FWFgRqwaTgjGb2edGdjYykgjpq1yEutmKY4tvd9EebCT6YbUvb2wau%2FLDtCbIOggbPvO0%2FIXemUDT3LYPdmduzPjGCyTvSkdISk%2B1iHuVd9yw8KPT6nV1NFTxlfsnlzR7uEn%2Bx0C55D%2FcSDAgN1RkkLlO%2FYVNx0akcjSG%2B4huH%2Bw9Gc2FrtQWbKkvLCQaekz2SlIUZOvOu%2F2PKPvG1dRi1JrdSC26fxH2HYd3I8Yf3foL3bhmrh%2FmNrhYYgfYL7o4qaWk4sqzHzTlznwoatkBrC8QArwp5APSg0agy%2F6FgFzs6Pz%2BqLuZ%2BvvnGURJyBRkwfytGQsBLE9N8gjQowvLBiH0VWAPoSIWgFAsWtKdT8KOpYs94zsdmFLGue8QB5SD%2Fgpt%2BJDN8aviIQFEeMc0ycrLqHkpHggqkSoLszCxkWfAdJnFKRSBJ1zhkHi3Yea9%2BKEknajM%2FIowOFAUEUC7x3rDZZ74i%2FHOH3CNLp%2BX5lopKMxNryfINJMRIyGlaX3%2FXeW35UE%2Fpbp%2FRt8TQOlxDo8V9tumJr7Ll%2B6kDvtNx5cFsfA1U97vvnfEPnw%3D%3D&allow_caching=true&sz=w2774-h1492' style='width: 100%; border-radius: 10px;'>
+        </div>
+
+        <div class="quarter-box">
+          <h4>Quarter 2</h4>
+          <p>My second quarter project was originally a recipe website. But I wanted to be diffrent so I used some crochet patterns I've used over the months.</p>
+          <img src='https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXJLLlGbXrDOxsLlvFjAPj4097fZDt4Iu9qnR%2FGB647O6uFBztIynwUSkM68ZTKDsZU3AYPkjyCH23n97wfK8tHG9Wpg6pYkNHLCoZJRVJpNNc81rJWsndNyhIte1iJrhYCkKcNh5R79UoouxkkskT0LD0xT2%2FETDKQddl84XvZgRb1p4ik8qh1zUtI1ec7rn8g3K5ICFLxByP%2BeuS0NVaG9SMuh249erAlFX%2FcWv96I%2BRdmVThAESFc3fxlGvjEQuufgPhPWnewRVWT%2FDOvTaUuGVVYfVO0NQhSXMEU5iFlp6iQzhTAuffAWVj%2ByeyI4r2vuVGcrZIclldCVmngOJurG9MK9bo16AFoMZoReO4FAqMXpjcX6Hm63vwvyZnL7zNWGq8bEeddv95rbhSm%2Bukncql%2Fjto43xbp5QM%2FlNb%2BGQS8At%2BD56INB75cY%2Bchsr1H0Jhx%2FHtvUJMkmk8Ltrnm4Z7Jm4Z6XJpxiq24CLGmMmm07qsa5gjOGYKnWsr50FEVOKr%2BjZQsfedhHoPVSdUb7kbB6xigH5wECCFgakgkKeoUpkL2UMXxqT2mZBCErZKmp2pLW7uNsXPdpwyeLRUas9rSbQuLlm2eg%3D%3D&allow_caching=true&sz=w2774-h1492&auditContext=forDisplay' style='width: 100%; border-radius: 10px;'>
+        </div>
+
+        <div class="quarter-box">
+          <h4>Quarter 3</h4>
+          <p>My third quarter project was about making a train station guide. Now this was a group activity, in which ilearned how to do new things.</p>
+          <img src='https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEWAZNjTIRyz3oWQ5ovMS9YHsRTwh%2FoSA78yGRMJKEIYe6CxFKnhmEdCG2ntQoHe0FxtWSX7pTK2aKVGHEE0wYfn4p8ApbCCbmYqyN7HLDmEYApwz6IZDAbEeYf9seiXnN9lk7%2BkPbCLb7QI43SbjAazDEViDGn3Uri08UImm%2FkIRtAEos7JdemvMJEDwPAzsTYkOVqZpGMKRH0O%2BejPWamXrPpqSae8sxsEw6Y6JeoPxctmwLq9SjG%2FdWRvBRO5wHRJYAIaQS9Ox3%2BKO6id2Ls3tnyDGwp2L2MqzBbiTIxVV%2FvBEFEcZpSnI1zK%2BRyLvDEonSreaTTG0vJtjGNrjn6q7DbCvTyOAjLdgeFgtiNzm2wE1nS7vN2%2Be8cwwgADLL%2BVe7NzceKcUqiZaPLmxXlDAN26IqbvuG1Kp%2B%2BnKSq0ZydfmJ0faNY7PFMjZckXhA1fjefyz7iiv9SyI2ACybl%2Bt6sJhj1NTuKOzlGjRw1rRqEDsS81Hvkwsm3ZKWWKHRhKov3v5pPWGvHNRtjgqAJZRw%2Bo2osJhaEf6BMg%2FVbNrrSX8dF3DD%2FAcujMbKZOgCd7sd%2F0MnJE4e24OuaK%2FdbeuwnoQyG%2Fpxs%2F0w%3D%3D&allow_caching=true&sz=w2664-h1478' style='width: 100%; border-radius: 10px;'>
+        </div>
+
+        <div class="quarter-box">
+          <h4>Quarter 4</h4>
+          <p>My fourth quarter project is about an onloine portfolio, in which i combined the things i learned before into one website. </p>
+          <img src='https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXTSqgqkIyvcCONOOshwWbeboJ6uOSSH4OYO26VR9lA%2FmwEvQKaw%2FewC3dde6E9wruJKcwvWXw8Dkuu7qtiNW4kPZ0KpUiwGgfAYJKrWTQZke5FJHGeC8Q6%2FPL3mnFTe6BkAP1zZir3kganBEDF4RkRdqpRh%2FCta4l59FVHiXrfibaLLBPj%2F3%2FIGbjbx1skmb63m8ThKMopLFK9Wv8CeliTegogN1up7i8hhJSEJnXlUhykloDVRLxr4Id62UWyvdWI%2FTyKqReuuiUgZ2vSqKfAPsFVM9M2hQxjqbrvUhbawrlWgI%2BSeB3ALEROD8dNGHXooe3gULfDLau%2FnHtgQPEslLe7FmgQtu85W%2F83jwZBdfoTHHuQmYIHAy51fEIOeb0Nm4cmr%2BmTdG7dB4P8eJZBwq2aXd8McEEEH%2FvvADry%2BvodE805q7HmUUz0iJYZLNjMCGYxwgCg9BK%2BUcjR%2FyFTXvk%2BMRy4EMBCvUXNVkTG7VrgMK1SSAfkh34y4RWw%2BYfmKaJbsvSk0013u196d%2BKsku9kY4TpDhX9%2FnW75pUUh%2F0lYtHV0TgBPDnhCyMQWgxJ%2FGqkVD8i2R5WJUTJofSYPTsdNW6ZAD3p3w%3D%3D&allow_caching=true&sz=w2664-h1478' style='width: 100%; border-radius: 10px;'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5" id="next">
+      <div class="col-md-12">
+        <div class="section-title">What's Next?</div>
+        <div class="fade-in">For grade 10, I wanna improve on my studies,</div>
+        <div class="fade-in">And do good in other subjects.</div>
+        <div class="fade-in">I want to learn how to code more to make nice websites,</div>
+        <div class="fade-in">And be a good student with good grades</div>
+        <div class="fade-in">So I can go to my dream school and make my parents proud.</div>
+      </div>
+    </div>
+
+    <div class="row mt-5" id="feedback">
+      <div class="col-md-12">
+        <div class="section-title">Leave a Comment</div>
+        <form onsubmit="event.preventDefault(); message();">
+          <label for="comment">Feedback*</label>
+          <textarea class="form-control" id="comment" required></textarea>
+
+          <label for="name">Name*</label>
+          <input type="text" class="form-control" id="name" required>
+
+          <label for="email">Email*</label>
+          <input type="email" class="form-control" id="email" required>
+
+          <label>Profile Rating</label>
+          <select class="form-select" id="rate1">
+            <option value="">Choose a rating...</option>
+            <option value="60">⭐</option>
+            <option value="70">⭐⭐</option>
+            <option value="80">⭐⭐⭐</option>
+            <option value="90">⭐⭐⭐⭐</option>
+            <option value="100">⭐⭐⭐⭐⭐</option>
+          </select>
+
+          <label>Projects Rating</label>
+          <select class="form-select" id="rate2">
+            <option value="">Choose a rating...</option>
+            <option value="60">⭐</option>
+            <option value="70">⭐⭐</option>
+            <option value="80">⭐⭐⭐</option>
+            <option value="90">⭐⭐⭐⭐</option>
+            <option value="100">⭐⭐⭐⭐⭐</option>
+          </select>
+
+          <label>Feedback Section Rating</label>
+          <select class="form-select" id="rate3">
+            <option value="">Choose a rating...</option>
+            <option value="60">⭐</option>
+            <option value="70">⭐⭐</option>
+            <option value="80">⭐⭐⭐</option>
+            <option value="90">⭐⭐⭐⭐</option>
+            <option value="100">⭐⭐⭐⭐⭐</option>
+          </select>
+
+          <button class="btn btn-info mt-3" type="submit">Submit Feedback</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Operation Brotherhood Montessori Center</p>
+    <p>&copy; Daniella Catam</p>
+  </div>
+
+  <script>
+    function message() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const comment = document.getElementById("comment").value;
+      const rate1 = Number(document.getElementById("rate1").value);
+      const rate2 = Number(document.getElementById("rate2").value);
+      const rate3 = Number(document.getElementById("rate3").value);
+
+      if (!name || !email || !comment) {
+        alert("Please complete the form");
+        return;
+      }
+
+      const avg = Math.round((rate1 + rate2 + rate3) / 3);
+      alert("Thank you for rating us " + avg + ". We appreciate your feedback.");
+    }
+  </script>
+</body>
+</html>

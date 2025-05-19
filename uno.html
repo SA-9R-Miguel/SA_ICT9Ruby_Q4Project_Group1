@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="obmc logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--line 8 is for social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Q4 Project</title>
+    <style>
+         .navbar-nav .nav-link {
+            transition: color 0.1s ease, background-color 0.3s ease, border-radius 0.8s ease;
+    }
+        .navbar-nav .nav-link:hover {
+            color: #fff; /* Text color on hover */
+            background-color: #8ACE00; /* Background color on hover */
+            border-radius: 30px;
+        }
+        body{
+            font-family: Gill Sans MT;
+            background-color: #8ACE00;
+        }
+        #logo{
+            width: 50px;
+            height: 50px;
+        }
+        li{
+            font-weight: bolder;
+            color: #6833a1;
+        }
+        .footer {
+            position:fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-image: linear-gradient(to left, #43dbfa, #8c36f5);
+            color: white;
+            text-align: center;
+            line-height: 2px;
+        }
+        #icons{
+            color: white;
+        }
+        #profile{
+            width: 265px;
+            height: 265px;
+            margin-left: 66px;
+        }
+        .info{
+            margin-top: 130px;
+            text-align: justify;
+        }
+        .row{
+            column-gap: 1px;
+        }
+        td, #text_thing{
+            text-align: justify;
+            font-family: Arial;
+            font-stretch: ultra-condensed;
+        }
+        #prof-sec{
+            margin-left: 30px;
+        }
+        #quarter_info{
+            background-image: linear-gradient(to right, #43dbfa, #8c36f5) ;
+            margin-bottom: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #section1, #section2, #section3, #section4{
+            font-size: 30px;
+        }
+        #sample{
+            border-radius: 20px;
+        }
+        #feedback{
+            background-color: #8ACE00;
+            width: 952px;
+        }
+        #head1{
+            font-family: Arial;
+            font-stretch: ultra-condensed;
+            font-size: 60px;
+            background-color: #8ACE00;
+            color: white;
+          }
+         /* CSS for the animation */
+        .fade-in {
+          opacity: 0;
+          animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        /* Delay for each sentence to appear one after another */
+        .fade-in:nth-child(1) {
+          animation-delay: 0s;
+        }
+
+        .fade-in:nth-child(2) {
+          animation-delay: 2s;
+        }
+
+        .fade-in:nth-child(3) {
+          animation-delay: 4s;
+        }
+
+        .fade-in:nth-child(4) {
+          animation-delay: 6s;
+        }
+
+        .fade-in:nth-child(5) {
+          animation-delay: 8s;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md fixed-top" style="background-image: linear-gradient(to right, #43dbfa, #8c36f5);" id="nav1">
+
+<div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+        <!--logo from obmontessori.edu.ph-->
+    <img id="logo" src="obmc logo.png">
+    </a>
+
+    <div class="collapse navbar-collapse">
+    
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#prof-sec">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#quarter_info">Quarter 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#quarter_info">Quarter 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#quarter_info">Quarter 3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#quarter_info">Quarter 4</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#next">What's Next</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#feedback">Rate Us</a>
+      </li>
+    </ul>
+
+    <form class="d-flex" action="index.html">
+            <input class="form-control" type="text" placeholder="search…">
+            <button class="btn btn-primary" type="button">Search</button>
+    </form>
+    </div>
+</div>
+</nav>
+
+<div class = "info">
+    <center>
+    <div class="col-md-6">
+        <span id="head1">MY ONLINE PORTFOLIO</span>
+          <br><br>
+          <h4>This portfolio shows my project for each quarter for this school year 2024-2025. This covers the following programming languages: Basic HTML, Cascading Style Sheet, Bootstrap, and Javascript. You may click on the navigation links to check my project.</h4>  
+    </div>
+    </center>
+</div>
+
+<br>
+<div class="container">
+
+<div class="row" id="prof-sec">
+
+    <div class="col-md-3">
+        <!--photo from canva.com-->
+        <img id ="profile" src = "profile.png">
+    </div>
+    <div class="col-md-8">
+        <table class="table table-light table-hover table-bordered">
+            <tr>
+                <th colspan = "2" style="text-align: center; background-color: #d4d8d9;">Profile Information</th>
+            </tr>
+            <tr>
+                <td style="background-color: #d4d8d9;"><b>Name:</b></td>
+                <td>Juan Antonino C. Miguel</td>
+            </tr>
+            <tr>
+                <td style="background-color: #d4d8d9; font-family: Arial; font-stretch: ultra-condensed;"><b>Interests/Clubs:</b></td>
+                <td>Music, Math, Swimming, Video Games</td>
+            </tr>
+            <tr>
+                <td style="background-color: #d4d8d9; font-family: Arial; font-stretch: ultra-condensed;"><b>Ambition:</b></td>
+                <td><i>I want to improve my performance both in swimming and school.</i></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+
+<hr>
+
+        <div class="row">
+        <center>
+            <div class="col-md-6" style="background-color: #8c36f5; color: white; font-family: Arial; font-stretch: ultra-condensed;" >
+                <script>  
+                document.write("<h2>Quarter Projects</h2>");
+                </script>
+            </div>
+        </center>
+        </div>
+
+        <center>
+        <div class="col-md-6" id="quarter_info" style="background-color: #8c36f5; color: white; font-family: Arial; font-stretch: ultra-condensed;">
+          <details ontoggle="quarter1()">
+            <summary>
+              <b id="section1">Quarter 1</b>
+              <br>
+              <i id="qtr1"></i> 
+            </summary>    
+            <img src='Q1project.png' style='height: 450px; width: 800px;' id="sample">
+            <br><br>
+          </details>
+        </div>
+     
+        <div class="col-md-6" id="quarter_info" style="background-color: #8c36f5; color: white; font-family: Arial; font-stretch: ultra-condensed;">
+          <details ontoggle="quarter2()">
+            <summary>
+              <b id="section2">Quarter 2</b>
+              <br>
+              <i id="qtr2"></i> 
+            </summary>    
+            <img src='Q2project.png' style='height: 450px; width: 800px;' id="sample">
+            <br><br>
+          </details>
+        </div>
+        
+        <div class="col-md-6" id="quarter_info" style="background-color: #8c36f5; color: white; font-family: Arial; font-stretch: ultra-condensed;">
+          <details ontoggle="quarter3()">
+            <summary>
+              <b id="section3">Quarter 3</b>
+              <br>
+              <i id="qtr3"></i> 
+            </summary>    
+            <img src='Q3project.png' style='height: 450px; width: 800px;' id="sample">
+            <br><br>
+          </details>
+        </div>
+        
+        <div class="col-md-6" id="quarter_info" style="background-color: #8c36f5; color: white; font-family: Arial; font-stretch: ultra-condensed;">
+          <details ontoggle="quarter4()">
+            <summary>
+              <b id="section4">Quarter 4</b>
+              <br>
+              <i id="qtr4"></i> 
+            </summary>    
+            <img src='Q4Project.png' style='height: 450px; width: 800px;' id="sample">
+            <br><br>
+          </details>
+        </div>
+    </center>
+
+<hr>
+
+    <div class="row">
+        <center>
+            <div id="next" class="col-md-6" style="background-color: #8c36f5; color: white; font-family: Arial; font-stretch: ultra-condensed;" >
+                <script>  
+                document.write("<h2>What's Next?</h2>");
+                </script>
+            </div>
+            <div class="col-md-4" style="background-color: #8c36f5; color: white; font-family: Arial; font-stretch: ultra-condensed;">
+            <p class="lead fade-in">Next school year, I expect to deepen my understanding of Python and its various applications.</p>
+            <p class="lead fade-in">I also expect that more challenging codes are in my way, so I have to prepare for that.</p>
+            <p class="lead fade-in">Finally, I look forward to more prosperous groupworks, not just in ICT, but in general.</p>
+        </div>
+        </center>
+
+    </div>
+
+<hr>
+
+    <div class="row">
+      <center>
+      <div  class="col-md-6" style="background-color: #8c36f5; color: white; font-family: Arial; font-stretch: ultra-condensed;" >
+        <script>  
+        document.write("<h2>Leave a Comment</h2>");
+        </script>
+      </div>
+      <div class="col-md-4" id="feedback" >
+        <p>We value your feedback. Talk to us, or else we will make you talk.
+        <form action="Q4Project.html">
+            
+            <label for="comment">Feedback<span style="color:red;">*</span></label>
+            <br>
+            <textarea style="width: 630px;" class="form-control" placeholder="Type here..." cols=50 rows=6 id="comment" required style="background-color: #8c36f5; color: white; font-family: Arial; font-stretch: ultra-condensed;"></textarea>
+            <br>
+
+            <label for="name">Name<span style="color:red;">*</span></label>
+            <br>
+            <input type="text" class="form-control" style="width: 630px;" id="name" required>
+            <br>
+            <label for="Email">Email<span style="color:red;">*</span></label>
+            <br>
+            <input type="email" class="form-control" style="width: 630px;" id="email" required>
+            <br>
+
+            <div class="col-md-8 bg-primary" style="color: white;" >
+                <script>  
+                document.write("<h2>Rate Us</h2>");
+                </script>
+            </div>
+
+            <br>
+
+            <div class="col-md-8">
+
+            <kbd>Profile Information</kbd>
+            <br>
+            <select class="form-select" id="rate1">
+                <option value = "1">Choose a rating...</option>
+                <option value = "60">⭐</option>
+                <option value = "70">⭐⭐</option>
+                <option value = "80">⭐⭐⭐</option>
+                <option value = "90">⭐⭐⭐⭐</option>
+                <option value = "100">⭐⭐⭐⭐⭐</option>
+            </select>
+            <br>
+            <kbd>Quarter Projects</kbd>
+            <br>
+            <select class="form-select" id="rate2">
+                <option value = "1">Choose a rating...</option>
+                <option value = "60">⭐</option>
+                <option value = "70">⭐⭐</option>
+                <option value = "80">⭐⭐⭐</option>
+                <option value = "90">⭐⭐⭐⭐</option>
+                <option value = "100">⭐⭐⭐⭐⭐</option>
+            </select>
+            <br>
+            <kbd>Feedback Section</kbd>
+            <br>
+            <select class="form-select" id="rate3">
+                <option value = "1">Choose a rating...</option>
+                <option value = "60">⭐</option>
+                <option value = "70">⭐⭐</option>
+                <option value = "80">⭐⭐⭐</option>
+                <option value = "90">⭐⭐⭐⭐</option>
+                <option value = "100">⭐⭐⭐⭐⭐</option>
+            </select>
+            </div>
+            <br><br>
+
+            <div class="d-grid">
+            <button type="submit" class="btn btn-info btn-block" onclick="message()">Submit Feedback</button>
+            </div>
+            
+        </form>
+      </div>
+
+<br><br><br><br><br>
+<div class="footer">
+   <br>
+    <p>For any inquiries, feel free to contact us.
+        <a id = "icons" href="www.facebook.com" class="fa fa-facebook"></a>
+        <a id = "icons" href="www.instagram.com" class="fa fa-instagram"></a>
+      </p>
+    <p>
+        <text style="font-family: arial; font-size: 20px; font-stretch; ultra-condensed; ">OB Montessori Center Sta. Ana Campus</text>
+    </p>
+   <hr>
+    <p>&copy;Student Names</p>
+</div>
+
+
+<script>
+    //display short intro per quarter project
+    function quarter1(){
+        document.getElementById("qtr1").innerHTML = "My first quarter project showcases my understanding of basic HTML while using cascading stylesheet to style my webpage content. In this image, I was obssessed with BRAT by Charli XCX.";
+    }
+    function quarter2(){
+        document.getElementById("qtr2").innerHTML = "My second quarter project helped me developed a responsive website using Bootstrap to showcase my skills in front-end design, ensuring a user-friendly and visually appealing experience across all devices. In this image, I felt bored so I put extra effort into coding this.";
+    }
+    function quarter3(){
+        document.getElementById("qtr3").innerHTML = "My third quarter project demonstrates my understanding of programming logic and user interface design with JavaScript. I got obssessed again with BRAT, so I made the color grading like BRAT.";
+    }
+    function quarter4(){
+        document.getElementById("qtr4").innerHTML = "My fourth quarter project is an online portfolio that highlights my skills in basic HTML, CSS, Bootstrap, and JavaScript, featuring a clean, responsive design and interactive elements to showcase my web development abilities. ";
+    }
+    //get values from the form elements
+    function message(){
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var comment = document.getElementById("comment").value;
+        var rate1 = Number(document.getElementById("rate1").value);
+        var rate2 = Number(document.getElementById("rate2").value);
+        var rate3 = Number(document.getElementById("rate3").value);
+        var init_rate = Math.round((rate1 + rate2 + rate3)/3);
+        var final_rate = init_rate + ".00";
+
+    //use conditionals to check empty fields or display feedback
+        if(name === "" || email === "" || comment === ""){
+            alert("Please complete the form");
+        }else
+        alert("Thank you for rating us " + final_rate + ". We appreciate your feedback.");
+    }
+
+
+
+</script>
+
+</body>
+
+</html>
+
